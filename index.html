@@ -1,23 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=no>
+    <title>Akademi Crypto - Combined</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+        }
+        .header img {
+            height: 40px;
+        }
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .main-content h1 span {
+            color: #8000ff; /* Change this to gradient class */
+        }
+        .main-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .main-content p span {
+            color: #8000ff; /* Change this to gradient class */
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .video-container img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        .join-now {
+            background-color: #8000ff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+        }
+        .footer p {
+            font-size: 14px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .title span {
+            color: #8000ff; /* Change this to gradient class */
+        }
+        .description {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        .join-now-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .join-now-button a {
+            background-color: #a64bf4;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .testimonial-section {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .testimonial-section h2 {
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            border: 1px solid #4a90e2;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #2a2a2a;
+        }
+        .testimonial img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .testimonial p {
+            color: #b3b3b3;
+            font-style: italic;
+        }
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+            }
+            .header a {
+                margin: 10px 0;
+            }
+            .main-content h1 {
+                font-size: 20px;
+            }
+            .main-content p {
+                font-size: 14px;
+            }
+            .join-now {
+                padding: 10px 20px;
+            }
+            .title {
+                font-size: 20px;
+            }
+        }
+        @media (orientation: landscape) {
+            body {
+                display: none; /* Hide content in landscape mode */
+            }
+        }
+        /* Adjusting the size of the curriculum image */
+        .content img {
+            max-width: 100%; /* Ensure it doesn't exceed the container width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Keep the rounded corners */
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #8000ff, #4a90e2); /* Gradient from purple to blue */
+            -webkit-background-clip: text; /* Clip the background to the text */
+            -webkit-text-fill-color: transparent; /* Make the text color transparent */
+        }
+    </style>
+</head>
+<body>
 
+    <!-- Header Section -->
+    <div class="header">
+        <img alt="Akademi Crypto Logo" src="https://storage.googleapis.com/a1aa/image/MokJjJUFcSrwKZnAleu8hoPYOW5YqMr6tLg9rZfRri8fy1NoA.jpg" />
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <h1>Raih Pendapatan Pasif dengan Investasi Online <span class="gradient-text">Strategi Cerdas untuk Pemula </span></h1>
+        <p>Jangan takut untuk memulai, bahkan dengan  <span class="gradient-text">jumlah yang kecil</span> Konsistensi adalah kunci sukses dalam investasi.</p>
+        <div class="video-container">
+            <img alt="Video thumbnail of a person speaking into a microphone" src="https://storage.googleapis.com/a1aa/image/lfc0cV1fqgtT5UdBh5X5DifsKGFzNGyiS6NXgATXIyDAz1NoA.jpg" />
+        </div>
+        <p>Terdafar pada <a href="https://pse.kominfo.go.id/tdpse-detail/1537" target="_blank"><span class="gradient-text">Kementrian Komunikasi & Digital</span></a>.</p>
+    </div>
+
+    <!-- Curriculum Section -->
+    <div class="container">
+        <div class="header">
+            <div class="subtitle">MODUL PELATIHAN</div>
+            <h1>Bersama Menuju Sukses</h1>
+        </div>
+        <div class="content">
+            <i class="fas fa-check-circle check-icon"></i>
+            <img alt="Crypto Investing image" src="https://storage.googleapis.com/a1aa/image/SGBFaJxBjAaaJlfgzOiOdRORfyA66cSPaTn02tTMiwiQ76GUA.jpg" />
+            <h2>Broadland <span class="gradient-text">Investing</span></h2>
+            <p>Di modul ini kalian akan saya pandu pribadi step by step dari cara pendaftaran, deposit, withdraw, memulai membeli produk investasi</p>
+            <p>Hingga memantau perkembangan produk vip secara real-time</p>
+        </div>
+    </div>
+
+    <!-- Master Referral Section -->
+    <div class="container">
+        <img alt="Sales Mastery promotional image" class="header-image" src="https://storage.googleapis.com/a1aa/image/966WfeA9s0uy8ETtE80gpSbNeYt030k5bP2msLvpwLFk31NoA.jpg" />
+        <div class="title">Master <span class="gradient-text">Referral </span></div>
+        <div class="description">Tingkatkan Pendapatanmu dengan Master Referral! Selain menguasai ilmu penjualan, kamu juga berkesempatan mendapatkan bonus hingga 20% dari setiap transaksi anggota yang kamu referensikan. Bayangkan, semakin banyak teman yang kamu ajak bergabung, semakin besar pula potensi penghasilanmu. Pelajari seni persuasi, bangun jaringan, dan raih kesuksesan finansial bersama kami!</div>
+        <div class="join-now-button">
+            <a href="https://wa.me/6283144282450" target="_blank">Join Now</a>
+        </div>
+        <div class="footer">JOIN DENGAN CARA KLIK JOIN NOW</div>
+    </div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Project</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Akademi Crypto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .pricing-header {
+            color: #00f;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sub-title {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        .sub-title span {
+            color: #f00;
+        }
+        .pricing-box {
+            border: 2px solid #800080;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 400px;
+            text-align: left;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #f00;
+            font-size: 18px;
+        }
+        .new-price {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .benefit-title {
+            font-size: 18px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .benefit-item i {
+            color: #00f;
+            margin-right: 10px;
+        }
+        .benefit-item span {
+            font-size: 14px;
+        }
+        .highlight {
+            color: #00f;
+        }
+        @media (max-width: 600px) {
+            .pricing-box {
+                padding: 10px;
+            }
+            .new-price {
+                font-size: 28px;
+            }
+            .benefit-title {
+                font-size: 16px;
+            }
+            .benefit-item span {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Simple Project</h1>
-    </header>
-    <main>
-        <p>This is a simplified version of the project, ready for deployment.</p>
-        <button id="alertButton">Click Me</button>
-    </main>
-    <footer>
-        <p>&copy; 2025 Simple Project</p>
-    </footer>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+        <div class="pricing-header">PRICING</div>
+        <div class="main-title">Daftar & Join Sekarang</div>
+        <div class="sub-title">TAMBAHAN DEPOSIT DARI KAMI <span>RP1.500.000</span>, NAIK MENJADI RP2.480.000 SETELAHNYA.</div>
+        <div class="pricing-box">
+            <div>DAPATKAN AKSES 1 BULAN INVESTASI BROADLAND HANYA</div>
+            <div class="old-price">RP700.000</div>
+            <div>PEMBAYARAN UNTUK 1 BULAN</div>
+            <div class="new-price">RP500.000</div>
+            <div class="benefit-title">✦ B E N E F I T</div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Strategi Investasi Yang Telah Terbukti Memberikan Keuntungan Besar Dengan Membeli <span class="highlight">VIP 6 & VIP 9</span></span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Dengan Total Profit Rp4.960.000 Sistem Bagi Hasil Di Potong 50% Jadi Anda Bisa Withdraw Sebesar Rp2.480.000</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Profit Harian Sebesar Rp205.000 Withdraw Bisa Di Lakukan Kapan Saja Open 24Jam</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Full Bimbingan Setiap Hari</span>
+            </div>
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademi Crypto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .pricing-header {
+            color: #00f;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sub-title {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        .sub-title span {
+            color: #f00;
+        }
+        .pricing-box {
+            border: 2px solid #800080;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 400px;
+            text-align: left;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #f00;
+            font-size: 18px;
+        }
+        .new-price {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .benefit-title {
+            font-size: 18px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .benefit-item i {
+            color: #00f;
+            margin-right: 10px;
+        }
+        .benefit-item span {
+            font-size: 14px;
+        }
+        .highlight {
+            color: #00f;
+        }
+        @media (max-width: 600px) {
+            .pricing-box {
+                padding: 10px;
+            }
+            .new-price {
+                font-size: 28px;
+            }
+            .benefit-title {
+                font-size: 16px;
+            }
+            .benefit-item span {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pricing-header">PRICING</div>
+        <div class="sub-title">TAMBAHAN DEPOSIT DARI KAMI <span>RP700.000</span>, NAIK MENJADI RP495.000 SETELAHNYA.</div>
+        <div class="pricing-box">
+            <div>DAPATKAN AKSES 1 BULAN INVESTASI BROADLAND HANYA</div>
+            <div class="old-price">RP200.000</div>
+            <div>PEMBAYARAN UNTUK 1 BULAN</div>
+            <div class="new-price">RP100.000</div>
+            <div class="benefit-title">✦ B E N E F I T</div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Strategi Investasi Yang Telah Terbukti Memberikan Keuntungan Besar Dengan Membeli <span class="highlight">VIP 3 & VIP 7</span></span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Dengan Total Profit Rp1.650.000 Sistem Bagi Hasil Di Potong 70% Jadi Anda Bisa Withdraw Sebesar Rp495.000</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Profit Harian Sebesar Rp55.000 Withdraw Bisa Di Lakukan Kapan Saja Buka 24Jam</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Full Bimbingan Setiap Hari</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+<div class="testimonial-section">
+    <h2>Apa Kata Mereka</h2>
+    <div class="testimonial">
+        <img src="https://i.ibb.co.com/GRdmZbq/Screenshot-20250102-120416.jpg" alt="Testimonial 1">
+        <p>"Akademi Crypto telah mengubah cara saya berinvestasi. Saya sangat merekomendasikannya!" - John Doe</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://yourserver.com/images/testimonial2.jpg" alt="Testimonial 2">
+        <p>"Materi yang disampaikan sangat jelas dan mudah dipahami. Terima kasih Akademi Crypto!" - Jane Smith</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://yourserver.com/images/testimonial3.jpg" alt="Testimonial 3">
+        <p>"Saya berhasil melipatgandakan investasi saya dalam waktu singkat!" - Alex Johnson</p>
+    </div>
+</div>
+
 </body>
 </html>
