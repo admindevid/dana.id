@@ -114,25 +114,15 @@
             color: #4a90e2;
             margin-bottom: 20px;
         }
-        .testimonial {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-            border: 1px solid #4a90e2;
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Responsive grid */
+            gap: 20px; /* Space between items */
+        }
+        .testimonial-grid img {
             border-radius: 10px;
-            padding: 20px;
-            background-color: #2a2a2a;
-        }
-        .testimonial img {
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            margin-right: 20px;
-        }
-        .testimonial p {
-            color: #b3b3b3;
-            font-style: italic;
+            width: 100%; /* Full width of the grid item */
+            height: auto; /* Maintain aspect ratio */
         }
         @media (max-width: 600px) {
             .header {
@@ -158,17 +148,6 @@
             body {
                 display: none; /* Hide content in landscape mode */
             }
-        }
-        /* Adjusting the size of the curriculum image */
-        .content img {
-            max-width: 100%; /* Ensure it doesn't exceed the container width */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 10px; /* Keep the rounded corners */
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #8000ff, #4a90e2); /* Gradient from purple to blue */
-            -webkit-background-clip: text; /* Clip the background to the text */
-            -webkit-text-fill-color: transparent; /* Make the text color transparent */
         }
     </style>
 </head>
@@ -206,13 +185,10 @@
 
     <!-- Master Referral Section -->
     <div class="container">
-        <img alt="Sales Mastery promotional image" class="header-image" src="https://storage.googleapis.com/a1aa/image/966WfeA9s0uy8ETtE80gpSbNeYt030k5bP2msLvpwLFk31NoA.jpg" />
+        <img alt="Sales Mastery" class="header-image" src="https://i.ibb.co.com/WWt0gGL/Any-Conv-com-Flux-Dev-A-vibrant-and-modern-illustration-of-a-Master-Referra-2.jpg" />
         <div class="title">Master <span class="gradient-text">Referral </span></div>
         <div class="description">Tingkatkan Pendapatanmu dengan Master Referral! Selain menguasai ilmu penjualan, kamu juga berkesempatan mendapatkan bonus hingga 20% dari setiap transaksi anggota yang kamu referensikan. Bayangkan, semakin banyak teman yang kamu ajak bergabung, semakin besar pula potensi penghasilanmu. Pelajari seni persuasi, bangun jaringan, dan raih kesuksesan finansial bersama kami!</div>
-        <div class="join-now-button">
-            <a href="https://wa.me/6283144282450" target="_blank">Join Now</a>
         </div>
-        <div class="footer">JOIN DENGAN CARA KLIK JOIN NOW</div>
     </div>
 <!DOCTYPE html>
 <html lang="en">
@@ -330,9 +306,12 @@
             <div class="benefit-item">
                 <i class="fas fa-check-circle"></i>
                 <span>Full Bimbingan Setiap Hari</span>
-            </div>
+           </div>
+           <div class="join-now-button">
+            <a href="https://wa.me/6283144282450" target="_blank">Join Now</a>
         </div>
     </div>
+
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -422,7 +401,6 @@
             }
         }
     </style>
-</head>
 <body>
     <div class="container">
         <div class="pricing-header">PRICING</div>
@@ -449,25 +427,40 @@
                 <i class="fas fa-check-circle"></i>
                 <span>Full Bimbingan Setiap Hari</span>
             </div>
+            <div class="join-now-button">
+            <a href="https://wa.me/6283144282450" target="_blank">Join Now</a>
         </div>
     </div>
 
     <!-- Testimonial Section -->
-<div class="testimonial-section">
-    <h2>Apa Kata Mereka</h2>
-    <div class="testimonial">
-        <img src="https://i.ibb.co.com/GRdmZbq/Screenshot-20250102-120416.jpg" alt="Testimonial 1">
-        <p>"Akademi Crypto telah mengubah cara saya berinvestasi. Saya sangat merekomendasikannya!" - John Doe</p>
+    <div class="testimonial-section">
+        <h2>TESTIMONI MEMBER</h2>
+        <div class="testimonial-grid">
+            <img src="https://i.ibb.co.com/7jDzdKx/1737423158591.jpg" alt="Testimonial 1">
+            <img src="https://i.ibb.co.com/F8sW8W4/1737423123107.jpg" alt="Testimonial 2">
+            <img src="https://i.ibb.co.com/98vJqCg/1737423068210.jpg" alt="Testimonial 3">
+                        <img src="https://i.ibb.co.com/YcQyshw/Screenshot-20250102-120416.jpg" alt="Testimonial 4">
+            <img src="https://i.ibb.co.com/gmSbrBg/Screenshot-20241231-171750.jpg" alt="Testimonial 5">
+                        <img src="https://i.ibb.co.com/Z6qPHr1/Screenshot-20241221-123120.jpg" alt="Testimonial 6">
+            <img src="https://i.ibb.co.com/5WH7ZMZ/Screenshot-20241221-123107.jpg" alt="Testimonial 7">
+                                    <img src="https://i.ibb.co.com/M16qJ9S/Screenshot-20241221-123057.jpg" alt="Testimonial 8">
+            <img src="https://i.ibb.co.com/R2Dn68j/Screenshot-20241221-123049.jpg" alt="Testimonial 9">
+                        <img src="https://i.ibb.co.com/0rXQ9BZ/Screenshot-20241219-133415.jpg" alt="Testimonial 10">
+            <img src="https://i.ibb.co.com/f0LK6X1/Screenshot-20241216-185048.jpg" alt="Testimonial 11">
+                                    <img src="https://i.ibb.co.com/YXZPyHz/Screenshot-20241209-204954.jpg" alt="Testimonial 12">
+            <img src="https://i.ibb.co.com/jfTNWrb/Screenshot-20241208-105535.jpg" alt="Testimonial 13">
+                        <img src="https://i.ibb.co.com/SQFT9Ns/Screenshot-20241208-103154.jpg" alt="Testimonial 14">
+            <img src="https://i.ibb.co.com/xMQDym2/Screenshot-20241208-102707.jpg" alt="Testimonial 15">
+                                    <img src="https://i.ibb.co.com/vs4pv6G/Screenshot-20241207-105057.jpg" alt="Testimonial 16">
+            <img src="https://i.ibb.co.com/q7P9sDT/Screenshot-20241206-160413.jpg" alt="Testimonial 17">
+                        <img src="https://i.ibb.co.com/jg5TDJW/Screenshot-20241206-145338.jpg" alt="Testimonial 18">
+        </div>
     </div>
-    <div class="testimonial">
-        <img src="https://yourserver.com/images/testimonial2.jpg" alt="Testimonial 2">
-        <p>"Materi yang disampaikan sangat jelas dan mudah dipahami. Terima kasih Akademi Crypto!" - Jane Smith</p>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>JOIN DENGAN CARA KLIK JOIN NOW</p>
     </div>
-    <div class="testimonial">
-        <img src="https://yourserver.com/images/testimonial3.jpg" alt="Testimonial 3">
-        <p>"Saya berhasil melipatgandakan investasi saya dalam waktu singkat!" - Alex Johnson</p>
-    </div>
-</div>
 
 </body>
 </html>
